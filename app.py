@@ -25,7 +25,7 @@ app.secret_key = os.environ.get("SECRET_KEY", "sajid_secret_key_fallback")
 # MongoDB Atlas Connection
 # IMPORTANT: Set MONGO_URI in Render Environment Variables
 # Example: mongodb+srv://user:pass@cluster0.fytyq.mongodb.net/?retryWrites=true&w=majority
-MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://sajidgsheet80:S@jid123@cluster0.fytyq.mongodb.net/?appName=Cluster0")
+MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://sajidgsheet80@gmail.com:S@jid123@cluster0.fytyq.mongodb.net/?appName=Cluster0")
 
 # Fixed API secret for all users (Set this in Render Environment Variables)
 MSTOCK_API_SECRET = os.environ.get("MSTOCK_API_SECRET", "<your_api_secret_here>")
@@ -124,7 +124,7 @@ def get_user_session(username):
             'initial_data': None,
             'atm_ce_plus20': 20,
             'atm_pe_plus20': 20,
-            'symbol_prefix': 'NSE:NIFTY26FEB',
+            'symbol_prefix': 'NSE:NIFTY25',
             'selected_index': 'NSE:NIFTY50-INDEX',
             'signals': [],
             'placed_orders': set(),
